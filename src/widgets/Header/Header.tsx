@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Languages, Moon } from 'lucide-react'
 import { cn } from 'cn'
+import { Button } from '@/shared'
 
 interface Props {
   className?: string,
@@ -56,12 +57,12 @@ export const Header = ({ className }: Props) => {
       </nav>
 
       <div className="flex items-center gap-2">
-        <button className="border rounded-full border-gray-800 p-2">
+        <Button>
           <Moon size={20} />
-        </button>
-        <button className="border rounded-full border-gray-800 p-2">
+        </Button>
+        <Button>
           <Languages size={20} />
-        </button>
+        </Button>
       </div>
     </header>
   )
