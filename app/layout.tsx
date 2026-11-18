@@ -3,12 +3,12 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
-  variable: "--font-inter",
+  variable: "--inter",
   subsets: ["latin"],
 });
 
 const jetBrains = JetBrains_Mono ({
-  variable: "--font-jetbrains",
+  variable: "--jetbrains",
   subsets: ["latin"],
 });
 
@@ -21,7 +21,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${jetBrains.variable} h-full antialiased`}
+      className={`${inter.variable} ${jetBrains.variable} h-full antialiased mx-auto w-full max-w-[1200px]`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
