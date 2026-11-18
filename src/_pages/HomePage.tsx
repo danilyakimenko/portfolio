@@ -1,7 +1,9 @@
-import { Header } from '@/widgets/Header'
+import {  Hero } from '@/widgets'
 
 export default function HomePage ()  {
   return (
-    <Header />
+    <>
+    <Hero />
+    </>
   )
 }

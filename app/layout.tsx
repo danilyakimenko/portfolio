@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { Header } from '@/widgets'
 
 const inter = Inter({
   variable: "--inter",
@@ -21,9 +22,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${jetBrains.variable} h-full antialiased mx-auto w-full max-w-[1200px]`}
+      className={`${inter.variable} ${jetBrains.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Header />
+        <main>
+          {children}
+        </main>
+      </body>
     </html>
   );
 }

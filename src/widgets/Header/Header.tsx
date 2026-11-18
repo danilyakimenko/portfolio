@@ -37,11 +37,13 @@ const navItems = [
 
 export const Header = ({ className }: Props) => {
   return (
-    <header className={cn('p-5 flex justify-between items-center gap-5 ', className)}>
+    <header className={cn('wrapper p-5 flex justify-between items-center gap-5 ', className)}>
       <Link
         className="text-light"
         href="/"
-      >Danil Yakimenko</Link>
+      >
+        Danil Yakimenko
+      </Link>
 
       <nav>
         <ul className="flex items-center gap-6">
