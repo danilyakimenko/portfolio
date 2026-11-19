@@ -1,8 +1,7 @@
 import Link from 'next/link'
 import { Languages, Moon } from 'lucide-react'
-
 import { Button } from '@/shared'
-import { navItems } from '@/widgets/Header/model'
+import { navItems } from '@/widgets/Header'
 
 export const Header = () => {
   return (

@@ -1,1 +1,2 @@
-export { Hero } from './Hero'
+export * from './ui'
+export * from './model'
