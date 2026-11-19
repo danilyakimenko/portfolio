@@ -12,6 +12,12 @@
   --background-color: #08090b;
   --grid-line: #ffffff0d;
   --color-elevated: #0d0f12;
+  --background-image-gradient-accent: linear-gradient(
+    135deg,
+    #6366f1,
+    #818cf8 60%,
+    #a78bfa
+  );
 }
 
 body {
@@ -46,4 +52,14 @@ body {
 
 .border-muted {
   border: 1px solid var(--color-muted);
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+  transition-duration: 0.4s;
 }

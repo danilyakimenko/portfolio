@@ -18,14 +18,20 @@ const socialLinks = [
     icon: '/linkedin.svg'
   },
 
+  {
+    title: 'Telegram',
+    href: '/',
+    icon: '/telegram.svg'
+  },
+
 ]
 
 export const Hero = ({ className }: Props) => {
   return (
     <section className="grid-bg py-24">
-      <div className="wrapper flex items-center gap-10">
-        <div className="flex-1 gap-6">
-          <div className="inline-flex items-center gap-2 border-muted rounded-2xl text-xs py-0.5 px-1 font-jetbrains">
+      <div className="wrapper flex justify-between items-center gap-10">
+        <div className="w-[576px] gap-6">
+          <div className="inline-flex items-center gap-2 border-muted rounded-2xl text-xs px-3 py-1 font-jetbrains">
             <span className=" w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
             <span>Open to work</span>
           </div>
@@ -37,7 +43,7 @@ export const Hero = ({ className }: Props) => {
             <Link
               className="inline-flex items-center justify-center gap-2 rounded-lg px-5 py-2.5 text-sm font-medium transition-all duration-150
                focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-accent
-                border text-light hover:border-accent hover:text-accent"
+                border text-light hover:border-accent hover:text-accent bg-linear-gradient-accent"
               href="/"
             >Get in touch</Link>
             <Link
@@ -67,6 +73,7 @@ export const Hero = ({ className }: Props) => {
           </ul>
         </div>
         <Image
+          className="surface-panel h-52 w-52 rounded-2xl object-cover sm:h-64 sm:w-64 md:h-72 md:w-72"
           src="/greygods.jpg"
           width={280}
           height={280}
