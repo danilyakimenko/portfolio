@@ -9,9 +9,10 @@
   --color-accent: #818cf8;
   --color-light: #f1f2f4;
   --color-muted: #8b8f9c;
-  --background-color: #08090b;
   --color-grid-line: #ffffff0d;
   --color-elevated: #0d0f12;
+  --color-surface: #111318;
+  --background-color: #08090b;
   --background-image-gradient-accent: linear-gradient(
     135deg,
     #6366f1,
