@@ -4,7 +4,7 @@ import { socialItems } from '@/widgets/Hero'
 
 export const Hero = () => {
   return (
-    <section className="grid-bg">
+    <section className="grid-bg border-b border-b-grid-line">
       <div className="py-24 wrapper flex justify-between items-center gap-5">
         <div>
           <div className="inline-flex items-center gap-2 border-muted rounded-2xl px-3 py-1 bg-elevated">
