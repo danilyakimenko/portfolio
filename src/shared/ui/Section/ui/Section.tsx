@@ -8,7 +8,7 @@ interface Props {
 }
 
 export const Section = ({ eyebrow, title, description, children }: Props) => {
-  const titleId = `${title}-title`
+  const titleId = `${eyebrow.toLowerCase()}-title`
 
   return (
     <section className="py-20 border-b border-b-grid-line" aria-labelledby={titleId}>
