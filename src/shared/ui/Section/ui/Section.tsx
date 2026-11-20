@@ -1,17 +1,21 @@
 import { ReactNode } from 'react'
+import { cn } from 'cn'
 
 interface Props {
   eyebrow: string,
   title: string,
   description: string,
+  isLightBackground?: boolean,
   children: ReactNode
 }
 
-export const Section = ({ eyebrow, title, description, children }: Props) => {
+export const Section = ({ eyebrow, title, description, isLightBackground,  children }: Props) => {
   const titleId = `${eyebrow.toLowerCase()}-title`
 
   return (
-    <section className="py-20 border-b border-b-grid-line" aria-labelledby={titleId}>
+    <section className={cn("py-20 border-b border-b-grid-line", {
+      'bg-elevated': isLightBackground
+    })} aria-labelledby={titleId}>
      <div className="wrapper grid gap-12">
        <div className="grid gap-3">
          <p className="font-jetbrains uppercase text-accent text-xs font-medium">{eyebrow}</p>
