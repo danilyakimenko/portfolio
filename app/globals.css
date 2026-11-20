@@ -64,3 +64,18 @@ select,
 svg * {
   transition-duration: 0.4s;
 }
+
+
+@layer components {
+  .swiper .swiper-pagination {
+    @apply !static mt-4 flex justify-center gap-2;
+  }
+
+  .swiper .swiper-pagination-bullet {
+    @apply !m-0 size-2 bg-indigo-400 opacity-60 transition-all duration-200;
+  }
+
+  .swiper .swiper-pagination-bullet-active {
+    @apply bg-indigo-400 opacity-100;
+  }
+}

@@ -1,4 +1,4 @@
-import { About, Hero, Skills } from '@/widgets'
+import { About, Hero, Portfolio, Skills } from '@/widgets'
 
 export default function HomePage ()  {
   return (
@@ -6,6 +6,7 @@ export default function HomePage ()  {
     <Hero />
     <About />
     <Skills />
+    <Portfolio />
     </>
   )
 }
