@@ -21,14 +21,13 @@ export interface Project {
 
 interface Props {
   projects: Project[]
-  className?: string
 }
 
-export const Slider = ({ projects, className }: Props) => {
+export const Slider = ({ projects }: Props) => {
   const [swiper, setSwiper] = useState<SwiperType | null>(null)
 
   return (
-    <div className={`relative w-full overflow-hidden px-10 ${className ?? ''}`}>
+    <div className="relative w-full overflow-hidden px-10">
       <Swiper
         modules={[Pagination]}
         slidesPerView="auto"
@@ -39,7 +38,7 @@ export const Slider = ({ projects, className }: Props) => {
           clickable: true,
         }}
         onSwiper={setSwiper}
-        className="!overflow-visible pb-9"
+        className="overflow-visible! pb-9"
       >
         {projects.map((project) => (
           <SwiperSlide
@@ -113,6 +112,7 @@ export const Slider = ({ projects, className }: Props) => {
                     relative min-h-60 overflow-hidden
                     border-t border-[#25262d] bg-[#0d0e11]
                     md:min-h-95 md:border-l md:border-t-0
+
                   "
                 >
                   <Image
@@ -135,12 +135,12 @@ export const Slider = ({ projects, className }: Props) => {
         aria-label="Previous project"
         onClick={() => swiper?.slidePrev()}
         className="
-          absolute left-0 top-1/2 z-10
-          flex size-10 -translate-y-1/2 items-center justify-center
-          rounded-full border border-[#30313a]
-          bg-[#111216] text-2xl text-white
-          transition-colors hover:bg-[#252630]
-        "
+  absolute left-0 top-1/2 z-10
+  flex size-8 -translate-y-1/2 items-center justify-center
+  rounded-full border border-[#30313a]
+  bg-[#111216] text-2xl text-white
+  transition-colors hover:bg-[#252630]
+"
       >
         ‹
       </button>
@@ -150,12 +150,12 @@ export const Slider = ({ projects, className }: Props) => {
         aria-label="Next project"
         onClick={() => swiper?.slideNext()}
         className="
-          absolute right-0 top-1/2 z-10
-          flex size-10 -translate-y-1/2 items-center justify-center
-          rounded-full border border-[#30313a]
-          bg-[#111216] text-2xl text-white
-          transition-colors hover:bg-[#252630]
-        "
+  absolute right-0 top-1/2 z-10
+  flex size-8 -translate-y-1/2 items-center justify-center
+  rounded-full border border-[#30313a]
+  bg-[#111216] text-2xl text-white
+  transition-colors hover:bg-[#252630]
+"
       >
         ›
       </button>

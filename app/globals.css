@@ -72,10 +72,12 @@ svg * {
   }
 
   .swiper .swiper-pagination-bullet {
-    @apply !m-0 size-2 bg-indigo-400 opacity-60 transition-all duration-200;
+    background-color: var(--color-muted) !important;
+
+    @apply !m-0 size-2 opacity-100 transition-all duration-200;
   }
 
   .swiper .swiper-pagination-bullet-active {
-    @apply bg-indigo-400 opacity-100;
+    background-color: var(--color-accent) !important;
   }
 }
