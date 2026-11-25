@@ -1,12 +1,13 @@
-import { About, Hero, Portfolio, Skills } from '@/widgets'
+import { About, Hero, Portfolio, Skills, Contact } from '@/widgets'
 
-export default function HomePage ()  {
+export default function HomePage() {
   return (
     <>
-    <Hero />
-    <About />
-    <Skills />
-    <Portfolio />
+      <Hero />
+      <About />
+      <Skills />
+      <Portfolio />
+      <Contact />
     </>
   )
 }
