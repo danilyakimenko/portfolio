@@ -84,4 +84,10 @@ svg * {
   .input {
     @apply mt-1 w-full rounded-lg border border-grid-line bg-transparent px-4 py-2.5 text-sm outline-none focus:border-accent;
   }
+
+  .button {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-5 py-2.5 text-sm font-medium
+    focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-accent
+    border border-muted/20 text-light hover:text-accent;
+  }
 }
