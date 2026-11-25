@@ -5,7 +5,7 @@ import { navItems } from '@/widgets/Header'
 
 export const Header = () => {
   return (
-    <header className='p-4 border-b border-b-grid-line'>
+    <header className='sticky top-0 z-50 p-4 border-b border-b-grid-line backdrop-blur-sm'>
       <div className="wrapper flex justify-between items-center gap-5">
         <Link
           className="text-light font-semibold"
@@ -22,7 +22,9 @@ export const Header = () => {
                 <Link
                   className="hover:text-light"
                   href={href}
-                >{label}</Link>
+                >
+                  {label}
+                </Link>
               </li>
             ))}
           </ul>
