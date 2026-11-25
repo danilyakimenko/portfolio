@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from '@/widgets'
+import { Footer } from '@/widgets/Footer'
 
 const inter = Inter({
   variable: "--inter",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <main>
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
