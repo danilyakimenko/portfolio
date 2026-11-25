@@ -6,10 +6,11 @@ interface Props {
   title: string,
   description: string,
   isLightBackground?: boolean,
+  className?: string,
   children: ReactNode
 }
 
-export const Section = ({ eyebrow, title, description, isLightBackground,  children }: Props) => {
+export const Section = ({ eyebrow, title, description, isLightBackground, className,  children }: Props) => {
   const titleId = `${eyebrow.toLowerCase()}-title`
 
   return (
@@ -22,7 +23,7 @@ export const Section = ({ eyebrow, title, description, isLightBackground,  child
          <h2 className="text-2xl font-semibold text-light sm:text-3xl" id={titleId}>{title}</h2>
          <p>{description}</p>
        </div>
-       <div>
+       <div className={className}>
          {children}
        </div>
      </div>
