@@ -7,14 +7,17 @@ export const Skills = () => {
     <Section
       eyebrow="Skills"
       title="What I work with"
-      description="Full Stack toolkit for shipping complete products."
+      description="Frontend toolkit for shipping complete products."
       id="skills"
       isLightBackground
     >
       <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {skillItems.map(({ title, technologies}, index) => (
-          <li key={index}>
-            <Tile>
+        {skillItems.map(({ title, technologies }, index) => (
+          <li
+            className="h-full"
+            key={index}
+          >
+            <Tile className="h-full">
               <h3 className="text-base font-semibold text-light">{title}</h3>
               <ul className="mt-4 flex flex-wrap gap-2">
                 {technologies.map((technology, index) => (

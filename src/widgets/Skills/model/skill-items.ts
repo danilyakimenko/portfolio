@@ -4,88 +4,36 @@ export const skillItems = [
     technologies: [
       'React',
       'Next.js',
-      'Angular',
+      'TypeScript',
+      'JavaScript',
       'HTML5',
       'CSS3',
-      'JavaScript',
-      'TypeScript',
-      'WordPress',
-      'Shopify',
+      "Tailwind",
+      "SCSS",
+      "Vite",
+      "Zustand",
+      "React Hook Form",
+      "Zod",
     ]
   },
-
   {
     title: 'Backend',
     technologies: [
-      'React',
-      'Next.js',
-      'Angular',
-      'HTML5',
-      'CSS3',
-      'JavaScript',
-      'TypeScript',
-      'WordPress',
-      'Shopify',
+      'Node.js',
+      'Prisma',
+      'PostgreSQL',
+      'REST API',
     ]
   },
-
   {
-    title: 'AI & Automation',
+    title: 'Other',
     technologies: [
-      'React',
-      'Next.js',
-      'Angular',
-      'HTML5',
-      'CSS3',
-      'JavaScript',
-      'TypeScript',
-      'WordPress',
-      'Shopify',
-    ]
-  },
-
-  {
-    title: 'Databases',
-    technologies: [
-      'React',
-      'Next.js',
-      'Angular',
-      'HTML5',
-      'CSS3',
-      'JavaScript',
-      'TypeScript',
-      'WordPress',
-      'Shopify',
-    ]
-  },
-
-  {
-    title: 'Mobile Development',
-    technologies: [
-      'React',
-      'Next.js',
-      'Angular',
-      'HTML5',
-      'CSS3',
-      'JavaScript',
-      'TypeScript',
-      'WordPress',
-      'Shopify',
-    ]
-  },
-
-  {
-    title: 'Cloud & DevOps',
-    technologies: [
-      'React',
-      'Next.js',
-      'Angular',
-      'HTML5',
-      'CSS3',
-      'JavaScript',
-      'TypeScript',
-      'WordPress',
-      'Shopify',
+      'Git',
+      'BEM',
+      'FSD',
+      'WebStorm',
+      'Figma',
+      'English level - B1',
     ]
   },
 ]
