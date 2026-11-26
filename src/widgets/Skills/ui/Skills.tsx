@@ -8,6 +8,7 @@ export const Skills = () => {
       eyebrow="Skills"
       title="What I work with"
       description="Full Stack toolkit for shipping complete products."
+      id="skills"
       isLightBackground
     >
       <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

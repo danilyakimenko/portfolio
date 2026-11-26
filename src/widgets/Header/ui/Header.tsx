@@ -9,7 +9,7 @@ export const Header = () => {
       <div className="wrapper flex justify-between items-center gap-5">
         <Link
           className="text-light font-semibold"
-          href="/"
+          href="#top"
           title="Home"
         >
           Danil Yakimenko
@@ -19,12 +19,12 @@ export const Header = () => {
           <ul className="flex items-center gap-6">
             {navItems.map(({ label, href }, index) => (
               <li key={index}>
-                <Link
+                <a
                   className="hover:text-light"
                   href={href}
                 >
                   {label}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>

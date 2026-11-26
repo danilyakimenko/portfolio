@@ -154,8 +154,7 @@ export const Slider = ({ projects }: Props) => {
   flex size-8 -translate-y-1/2 items-center justify-center
   rounded-full border border-[#30313a]
   bg-[#111216] text-2xl text-white
-  transition-colors hover:bg-[#252630]
-"
+  transition-colors hover:bg-[#252630]"
       >
         ›
       </button>

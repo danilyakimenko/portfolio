@@ -5,18 +5,19 @@ interface Props {
   eyebrow: string,
   title: string,
   description: string,
+  id: string,
+  children: ReactNode
   isLightBackground?: boolean,
   className?: string,
-  children: ReactNode
 }
 
-export const Section = ({ eyebrow, title, description, isLightBackground, className,  children }: Props) => {
+export const Section = ({ eyebrow, title, description, id, isLightBackground, className,  children }: Props) => {
   const titleId = `${eyebrow.toLowerCase()}-title`
 
   return (
     <section className={cn("py-20 border-b border-b-grid-line", {
       'bg-elevated': isLightBackground
-    })} aria-labelledby={titleId}>
+    })} aria-labelledby={titleId} id={id}>
      <div className="wrapper grid gap-12">
        <div className="grid gap-3">
          <p className="font-jetbrains uppercase text-accent text-xs font-medium">{eyebrow}</p>

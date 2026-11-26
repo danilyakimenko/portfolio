@@ -38,6 +38,7 @@ export const Contact = ({ className }: Props) => {
       eyebrow="Contact"
       title="Let's work together"
       description="Have a project in mind, or just want to say hello? Send a message and I'll get back to you."
+      id="contact"
       className="grid gap-10 lg:grid-cols-[1fr_1.2fr]"
       isLightBackground
     >

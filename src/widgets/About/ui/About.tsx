@@ -41,6 +41,7 @@ export const About = () => {
       eyebrow="About"
       title="A bit about me"
       description="Web, Mobile, AI, Full Stack, System Architecture and End to End Product Development"
+      id="about"
     >
       <div className="grid grid-cols-2 items-center gap-10">
         <div className="space-y-4 text-base">

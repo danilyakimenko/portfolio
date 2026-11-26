@@ -56,6 +56,7 @@ export const Portfolio = () => {
       eyebrow="Portfolio"
       title="Projects by category"
       description="Explore selected open-source work and client projects, organized by the kind of problems they solve."
+      id="portfolio"
     >
       <Slider projects={projects} />
     </Section>
