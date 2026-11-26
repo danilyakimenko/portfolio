@@ -1,0 +1,1 @@
+export { aboutItems } from './about-items'
